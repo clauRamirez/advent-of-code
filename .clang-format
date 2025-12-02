@@ -1,0 +1,31 @@
+---
+BasedOnStyle: LLVM
+
+# Indentation
+IndentWidth: 4
+UseTab: Never
+TabWidth: 4
+ContinuationIndentWidth: 4
+
+# Braces
+BreakBeforeBraces: Linux
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+
+# Spacing
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements
+PointerAlignment: Right
+DerivePointerAlignment: false
+
+# Line length
+ColumnLimit: 100
+
+# Other
+AllowShortCaseLabelsOnASingleLine: false
+IndentCaseLabels: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+SortIncludes: false
