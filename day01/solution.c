@@ -3,15 +3,17 @@
 #include <stdio.h>
 #include "../lib/io.h"
 
+#define INPUT_FILE "day01/input.txt"
+
 static int16_t calc_distance(const char *move)
 {
-    int16_t dist = atoi(move + 1);
+    int16_t dist = (int16_t)atoi(move + 1);
     return move[0] == 'L' ? dist * -1 : dist;
 }
 
 static uint16_t solution_1(const char *path)
 {
-    struct file_data *data = read_file(path);
+    struct io_file_data *data = io_read_file(path);
     if (!data)
         return 0;
 
@@ -28,13 +30,13 @@ static uint16_t solution_1(const char *path)
             cnt++;
     }
 
-    free_file_data(data);
+    io_free_file_data(data);
 
     return cnt;
 }
 
 int main(void)
 {
-    printf("solution 1: %u\n", solution_1("day01/input.txt"));
+    printf("solution 1: %u\n", solution_1(INPUT_FILE));
     return 0;
 }

@@ -1,7 +1,7 @@
 CC = clang
 CFLAGS = -Wall -Wextra -std=c99 -Ilib
 
-LIB_SRCS = lib/*.c
+LIB_SRCS = $(wildcard lib/*.c)
 LIB_OBJS = $(LIB_SRCS:.c=.o)
 
 # generic build rule:

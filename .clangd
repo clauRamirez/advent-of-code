@@ -1,0 +1,10 @@
+CompileFlags:
+  Compiler: /usr/bin/cc
+  Add:
+    - -xc
+    - -Iinclude
+    - -Wall
+    - -Wextra
+    - -Wconversion
+    - -pedantic
+    - -std=c99
